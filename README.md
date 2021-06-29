@@ -49,6 +49,7 @@ Edit & apply fast-cgi-configmap.yaml & ingress.yaml (uncomment annotations)
 kubectl apply -f fast-cgi-configmap.yaml
 
 kubectl apply -f ingress.yaml
+kubectl apply -f nginx-configmap.yaml
 ```
 
 ### SSL/TLS certificate
