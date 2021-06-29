@@ -22,10 +22,9 @@ metadata:
     #             fastcgi_param PATH_INFO $fastcgi_path_info;
     #     }
   name: wordpress-dev
-  namespace: development
 spec:
   rules:
-  - host: dev.example.io
+  - host: localhost
     http:
       paths:
       - backend:
@@ -33,5 +32,5 @@ spec:
           servicePort: 80
   tls:
   - hosts:
-    - dev.example.io
+    - localhost
     secretName: wordpress-dev

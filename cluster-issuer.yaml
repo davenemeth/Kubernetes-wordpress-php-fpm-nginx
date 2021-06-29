@@ -1,11 +1,11 @@
-apiVersion: cert-manager.io/v1alpha2
+apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: wordpress-dev
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: example@gmail.com
+    email: david.nemeth@alaskalabs.de
     privateKeySecretRef:
       name: wordpress-dev
     solvers:
