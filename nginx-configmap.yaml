@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: nginxthroughpass
+  name: nginx-fastcgi-config
 data:
   default.conf: |-
     server {
